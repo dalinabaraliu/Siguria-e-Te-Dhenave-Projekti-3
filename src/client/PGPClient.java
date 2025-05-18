@@ -68,6 +68,7 @@ public class PGPClient {
             System.out.println("[INFO] Digital Signature (Base64):");
             System.out.println(signature);
 
+
             System.out.println("New encrypted email received. Decrypting...");
             System.out.println("The email from " + from + " has been successfully decrypted and verified.");
 

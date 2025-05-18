@@ -60,13 +60,31 @@ Enter your email address: sender@example.com
 Enter recipient email address: receiver@example.com
 Generating PGP key pair...
 Done.
+
+[INFO] Sender Private Key:
+MIIEvAIBADANB... (Base64 i shkurtuar)
+
+[INFO] Sender Public Key:
+MIIBIjANBgkqh... (Base64 i shkurtuar)
+
+[INFO] Receiver Public Key:
+MIIBIjANBgkqh... (Base64 i shkurtuar)
+
 Please enter your email content below:
 > Hello, this is a test email.
 Encrypting and signing the email...
+
+[INFO] Encrypted Message (Base64):
+agT0Gdf9AoiUF... (Base64 i shkurtuar)
+
+[INFO] Digital Signature (Base64):
+GJfdXl2YDc4E... (Base64 i shkurtuar)
+
 Email successfully sent to receiver@example.com
 Awaiting encrypted messages...
 New encrypted email received. Decrypting...
 The email from sender@example.com has been successfully decrypted and verified.
+
 
 ```
 
