@@ -26,6 +26,11 @@ public class PGPClient {
             PublicKey senderPublic = KeyManager.loadPublicKey("sender");
             PublicKey receiverPublic = KeyManager.loadPublicKey("receiver");
             PrivateKey receiverPrivate = KeyManager.loadPrivateKey("receiver");
+            //ndryshimi
+            KeyManager.printKey(senderPrivate, "Sender Private Key");
+            KeyManager.printKey(senderPublic, "Sender Public Key");
+            KeyManager.printKey(receiverPublic, "Receiver Public Key");
+
 
             System.out.println("Please enter your email content below:");
             System.out.print("> ");
@@ -57,6 +62,11 @@ public class PGPClient {
 
             String decrypted = Services.CryptoService.decrypt(encResponse, receiverPrivate);
             boolean verified = SignatureService.verify(decrypted, sigResponse, senderPublic);
+            //ndryshimi
+            System.out.println("[INFO] Encrypted Message (Base64):");
+            System.out.println(encrypted);
+            System.out.println("[INFO] Digital Signature (Base64):");
+            System.out.println(signature);
 
             System.out.println("New encrypted email received. Decrypting...");
             System.out.println("The email from " + from + " has been successfully decrypted and verified.");
