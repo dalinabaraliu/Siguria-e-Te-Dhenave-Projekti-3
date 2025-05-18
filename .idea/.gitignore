@@ -1,3 +1,37 @@
 # Default ignored files
-/shelf/
-/workspace.xml
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+
+# Build output
+/out/
+target/
+bin/
+build/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Key files
+*.key
+
+# Logs and temp files
+*.log
+*.tmp
+
+# OS-specific
+*.swp
+*.swo
+
+# Optional
+# Generated keypairs or compiled outputs
+*.pub
+
